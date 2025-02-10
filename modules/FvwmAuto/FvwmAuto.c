@@ -344,6 +344,7 @@ main(int argc, char **argv)
 	{
 		len += 32;
 	}
+	len += 2;               /* for \n and null byte */
 	buf = safemalloc(len);
 
 	while (!isTerminated)
